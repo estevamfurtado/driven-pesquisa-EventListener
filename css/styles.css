@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color:rgb(37, 37, 37);
+    background-color: rgb(41, 41, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+
+.dook {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dook__sidebar {
+    width: 250px;
+    height: 80%;
+    background-color: rgb(231, 231, 231);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dook__header {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    border-bottom: 0.5px solid rgb(221, 221, 221);
+}
+.dook__header h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+}
+
+.dook__header__emoji {
+    font-size: 60px;
+    margin: 0;
+}
+
+.dook__index {
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    padding: 20px 0;
+}
+
+.dook__index__item {
+    padding: 15px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.dook__index__item:hover {
+    background-color: rgba(255, 255, 255, 0.459);
+}
+.dook__index__item.selected {
+    background-color: rgba(0, 127, 212, 0.199);
+    font-weight: 700;
+}
+
+
+.dook__main {
+    background-color: white;
+    width:calc(100% - 250px);
+    height: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.dook__main__header {
+    height: 30px;
+    font-size: 14px;
+    padding: 0 20px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(221, 221, 221);
+    justify-content: space-between;
+}
+
+.dook__main__header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dook__main__header__right > p {
+    width: 50px;
+    text-align: center;
+}
+
+.dook__main__header__right > ion-icon {
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.dook__main__header__right > ion-icon:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.dook__main__header__right > ion-icon.inactive {
+    color: rgb(182, 182, 182);
+}
+
+
+
+
+
+.dook__main__content {
+    height: calc(100% - 30px);
+    overflow-y: scroll;
+    padding: 50px 100px;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+highlight {
+    background-color: rgba(240, 209, 73, 0.30);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+highlight:hover {
+    background-color: rgba(240, 209, 73, 0.70);
+}
+
+slide {
+    background-color: violet;
+}
+
+
+function {
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+    color: black;
+    border-radius:5px;
+}
+
+functionelement {
+    padding:5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 133);
+    background-color: rgb(238, 238, 238);
+}
+
+
+.blockOfCode {
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 85%;
+    background-color: rgba(150, 195, 240, 0.2);
+    border-radius: 6px;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "eventListener",
+  "homepage": "none",
+  "authors": [
+    "Estevam <estevamfurtado@gmail.com>"
+  ],
+  "description": "research about eventListeners in js",
+  "main": "index.html",
+  "keywords": [
+    "eventListener",
+    "research"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showdown": "^2.0.0"
+  }
+}
